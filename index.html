@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <script src="script/anime.min.js"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjU2FTuFg1WfBBIhGx5tGad7MYqNXMf38&callback=initMap">
+    </script>
+    <script src="script/map.js"></script>
+    <title>Google Maps API - Haco</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #infoWindow {
+            padding: 0 20px;
+            transition: all 0.4s ease;
+        }
+
+        #infoWindow p {
+            line-height: 1.9;
+            color: #333333;
+            font-size: 14px;
+        }
+
+        #infoWindow h3 {
+            color: #333333;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .imgInfo {
+            width: 300px;
+            float: left;
+            padding: 0 20px 40px 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .gm-style-iw-c {
+            background-color: #f2f2f2 !important;
+        }
+
+        .gm-style-iw-d {
+            overflow: unset !important;
+        }
+
+        /* 
+        .closebtn {
+            width: 30px !important;
+            height: 30px !important;
+            opacity: 1 !important;
+            right: 35px !important;
+            top: 0 !important;
+            z-index: 999;
+            background-color: green;
+        } */
+
+        .gm-ui-hover-effect {
+            top: 10px !important;
+            right: 25px !important;
+            /* width: 40px !important;
+            height: 40px !important; */
+        }
+
+        .gm-ui-hover-effect img {
+            width: 120% !important;
+            height: 120% !important;
+        }
+
+        .fa-times-circle {
+            padding: 0;
+            font-size: 28px !important;
+            color: #000099;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map" style="width: 100vw; height: 100vh;"></div>
+</body>
+
+</html>
